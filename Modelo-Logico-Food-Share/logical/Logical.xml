@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2C0F75A6-D344-232B-7879-09DCDBCD0829" mainViewID="B17F2061-EF24-5FA4-C6BA-631D78A476EA">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:18:31 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

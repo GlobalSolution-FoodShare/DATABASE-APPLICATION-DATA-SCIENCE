@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E29B857-4B0D-ED5E-1F3B-A9C1661D0A36" name="FS_T_DOACAO">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:04:57 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_DOACAO" id="AFE89BED-9865-28D8-B0D5-1DB4319EC90D">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:20:27 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_DOADOR" id="9CFC80AE-B93B-6DCC-C83B-499F28218883">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:17:04 UTC</createdTime>
+<generatorID>DE4FCE83-B411-6E44-5D1D-D70CE74C8D94</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<referedAttribute>D4FDF6EB-BDC7-A73E-4A3B-52B959BB475D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CARRINHO" id="3D1711C8-DEB1-67A4-305A-AB02AF5D1E00">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:34:28 UTC</createdTime>
+<generatorID>22F35EA4-97AB-0F24-8DF5-E70A954CFAED</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<referedAttribute>04AFCC87-46A4-62F6-0353-3737207761CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_DOACAO" id="709C9E2E-65DF-1DE5-34CA-20CFFD34B8D4">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:20:48 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_STATUS" id="6D261819-10F5-DFCA-A9DC-AAEE9A55ED77">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:20:56 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F3795063-83C4-A2BF-2E29-27197C76D2DE" name="FS_T_DOACAO PK">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:18:55 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AFE89BED-9865-28D8-B0D5-1DB4319EC90D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

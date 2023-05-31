@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CF925C71-9C8E-AFC2-29FD-6BA480E0B022" name="FS_T_FEEDBACK">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:46:14 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_FEEDBACK" id="5BE88F91-BBE6-204D-2F37-EEDADF0416CD">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:27:32 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_NOTA" id="FC3922C9-09DB-99FF-D8EF-F10163B56588">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:31:54 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_FEEDBACK" id="01D39054-C8CF-79F7-A695-2FA2A498E649">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:27:42 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3AE69658-0E20-26F0-0C59-E9ED4391A4F6" name="FS_T_FEEDBACK PK">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:27:41 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5BE88F91-BBE6-204D-2F37-EEDADF0416CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

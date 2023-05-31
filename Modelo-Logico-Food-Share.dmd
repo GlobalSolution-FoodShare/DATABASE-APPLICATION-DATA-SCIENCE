@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo-Logico-Food-Share" id="AF32F7A1-EA75-C786-62D3-4EB0C7D2117B" version="3.5">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:18:31 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>AF32F7A1-EA75-C786-62D3-4EB0C7D2117B</designId>
+</OSDM_Design>

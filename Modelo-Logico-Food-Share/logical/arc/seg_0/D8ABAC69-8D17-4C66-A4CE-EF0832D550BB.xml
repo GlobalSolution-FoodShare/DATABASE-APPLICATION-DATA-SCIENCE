@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="D8ABAC69-8D17-4C66-A4CE-EF0832D550BB" name="Arc_1">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:30:14 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<entity>FCE6B769-5CDB-D3C9-7D5B-5398C95E9A6E</entity>
+<relations>
+<relationID>4C4B7B9C-24C0-0F94-4B40-1BA026350496</relationID>
+<relationID>713F6805-80C2-1286-8B9F-E90D60CD0DE7</relationID>
+</relations>
+</Arc>

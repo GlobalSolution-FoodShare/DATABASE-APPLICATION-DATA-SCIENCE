@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA83810D-174A-03B1-71BA-9396BA7C5FC2" name="FS_T_DOADOR">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:25:53 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_DOADOR" id="D4FDF6EB-BDC7-A73E-4A3B-52B959BB475D">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:16:51 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CLIENTE" id="27D24F15-B09D-889A-6CB0-1F1235F47C1C">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:56:48 UTC</createdTime>
+<generatorID>713F6805-80C2-1286-8B9F-E90D60CD0DE7</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<referedAttribute>B3F1F601-649A-858B-BC94-F48C48C4BA80</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CNPJ" id="05419EB7-776E-E9D0-701D-1311CFBB58D0">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:15:58 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4114F0F5-0372-8A67-8CFE-A8FF999B11B2" name="FS_T_DOADOR PK">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:16:59 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D4FDF6EB-BDC7-A73E-4A3B-52B959BB475D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CC85BF0F-0051-EC61-76A7-38BA42BBEE26" name="UK_DOADOR_CNPJ">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:17:21 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<newElementsIDs>05419EB7-776E-E9D0-701D-1311CFBB58D0</newElementsIDs>
+<usedAttributes>
+<attributeRef>05419EB7-776E-E9D0-701D-1311CFBB58D0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

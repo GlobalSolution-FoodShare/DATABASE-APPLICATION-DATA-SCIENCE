@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FCE6B769-5CDB-D3C9-7D5B-5398C95E9A6E" name="FS_T_CLIENTE">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:19:20 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CLIENTE" id="B3F1F601-649A-858B-BC94-F48C48C4BA80">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:56:32 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USUARIO" id="1AD0535F-FECB-F6CD-9513-53C48813F61A">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:53:07 UTC</createdTime>
+<generatorID>1DD4CC41-F233-0FCD-5C62-517E69791FF9</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<referedAttribute>87896696-322C-C9E0-7844-94383039740C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CPF" id="4FB6D9B7-29BE-B6D2-0F1F-88B7A260502A">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:11:45 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_NOME_COMPLETO" id="CEE6390D-6161-47C6-5710-7340BBE1D9D5">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:11:10 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_NASCIMENTO" id="BCBCF187-E258-0FF1-EE0F-83C5BA864E73">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:11:26 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A75A1417-6930-FFEF-C792-0F6F2061377F" name="cliente PK">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:56:47 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3F1F601-649A-858B-BC94-F48C48C4BA80</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AD43AE6D-EBE3-B57D-AFD9-519A479A8FE5" name="UK_CLIENTE_CPF">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 01:13:01 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<newElementsIDs>4FB6D9B7-29BE-B6D2-0F1F-88B7A260502A</newElementsIDs>
+<usedAttributes>
+<attributeRef>4FB6D9B7-29BE-B6D2-0F1F-88B7A260502A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

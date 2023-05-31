@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_11" directorySegmentName="seg_0" id="A8289C01-F74B-E0FA-A521-F1800626B689">
+<createdBy>Fonse</createdBy>
+<createdTime>2023-05-31 00:26:56 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<sourcePk>E663B9FE-BE0B-A419-DB5A-2CAF9217F442</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6F32F3C1-22AF-4DA9-5BB8-5BA87A9AFFE7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>81212466-8006-A51F-7B8E-F3FB8D67D0D5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
