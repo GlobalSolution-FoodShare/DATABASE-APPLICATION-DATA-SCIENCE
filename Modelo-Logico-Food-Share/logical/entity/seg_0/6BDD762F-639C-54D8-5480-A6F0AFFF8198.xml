@@ -18,6 +18,8 @@
 <Attribute name="ID_PRODUTO" id="33F7F96D-42BA-726A-C1EB-9413E2E3C817">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:22:43 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do produto , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do produto , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -31,6 +33,8 @@
 <Attribute name="NM_PRODUTO" id="FA5B01FB-2248-F748-B897-5DD19C32A2C8">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:23:17 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o nome do produto.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o nome do produto.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -44,6 +48,8 @@
 <Attribute name="NR_PESO" id="2446AB1D-6057-BC25-2DF6-4D7C0B110602">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:24:27 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o peso do produto.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o peso do produto.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -57,6 +63,8 @@
 <Attribute name="DS_PRODUTO" id="8BD78447-1ADD-4891-E1FC-77DF34EC0329">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:23:41 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a descrição  do produto.Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a descrição  do produto.Seu conteúdo é opcional.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -70,7 +78,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="21C32B1E-7B31-06AD-7C8E-BC0E90015FC0" name="produto PK">
+<identifier id="21C32B1E-7B31-06AD-7C8E-BC0E90015FC0" name="FS_T_PRODUTO_PK">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:23:11 UTC</createdTime>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
@@ -78,6 +86,7 @@
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>33F7F96D-42BA-726A-C1EB-9413E2E3C817</newElementsIDs>
 <usedAttributes>
 <attributeRef>33F7F96D-42BA-726A-C1EB-9413E2E3C817</attributeRef>
 </usedAttributes>

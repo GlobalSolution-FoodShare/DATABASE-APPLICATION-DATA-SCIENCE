@@ -18,6 +18,8 @@
 <Attribute name="ID_USUARIO" id="87896696-322C-C9E0-7844-94383039740C">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 00:19:07 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do usuario , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do usuario , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -28,9 +30,28 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DS_LOGIN" id="ECB58E3D-D320-FE22-4C44-E3DCD2848F76">
+<Attribute name="ID_CLIENTE" id="070ADCD0-D3C2-BE47-376D-B2A0C128F3B2">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-05-31 22:38:01 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>E66437F2-B677-18D7-C771-D6337FF80CF8</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<referedAttribute>B3F1F601-649A-858B-BC94-F48C48C4BA80</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_EMAIL" id="ECB58E3D-D320-FE22-4C44-E3DCD2848F76">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 00:52:25 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o e-mail do usuário.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o e-mail do usuário.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -41,9 +62,11 @@
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DS_PASSWORD" id="6DE22AF1-ADEB-F0F8-E554-0C5F626B67C7">
+<Attribute name="DS_SENHA" id="6DE22AF1-ADEB-F0F8-E554-0C5F626B67C7">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 00:52:53 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a senha do usuário.Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a senha do usuário.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -57,6 +80,8 @@
 <Attribute name="DT_ACESSO" id="302B7F30-A808-9BEB-3818-4F31F790BE6A">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:13:59 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a data de acesso so usuário, gerada automáticamente pelo sistema.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a data de acesso so usuário, gerada automáticamente pelo sistema.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -78,6 +103,18 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>87896696-322C-C9E0-7844-94383039740C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="06AC4F62-886D-7CCD-206B-57EF91AF67FF" name="UK_USUARIO_EMAIL">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-05-31 22:31:15 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<newElementsIDs>ECB58E3D-D320-FE22-4C44-E3DCD2848F76</newElementsIDs>
+<usedAttributes>
+<attributeRef>ECB58E3D-D320-FE22-4C44-E3DCD2848F76</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

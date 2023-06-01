@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8E4C988-D795-EDA6-B3BA-AA44076EA5D2" name="FS_T_CLIENTE">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<generatorID>FCE6B769-5CDB-D3C9-7D5B-5398C95E9A6E</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CLIENTE" id="2168CBBF-5AB1-0402-1692-EF8B8E77D5CF">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>B3F1F601-649A-858B-BC94-F48C48C4BA80</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CPF" id="F819A139-E295-1060-5ED2-CA99184223D4">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o CPF do cliente.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o CPF do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>4FB6D9B7-29BE-B6D2-0F1F-88B7A260502A</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_COMPLETO" id="5FB8C33A-CFCD-EB32-7DB3-CEB444046530">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o nome completo  do cliente.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o nome completo  do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>CEE6390D-6161-47C6-5710-7340BBE1D9D5</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D9E3A1D-956E-0362-DBDF-2A345959479B" name="FS_T_CLIENTE_PK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<generatorID>A75A1417-6930-FFEF-C792-0F6F2061377F</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2168CBBF-5AB1-0402-1692-EF8B8E77D5CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB0E1B4F-57F0-159C-4A0F-C44DA0EE54E3" name="FS_T_CLIENTE_NR_CPF_UN">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<generatorID>AD43AE6D-EBE3-B57D-AFD9-519A479A8FE5</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F819A139-E295-1060-5ED2-CA99184223D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1CBD65F-0733-BAC8-535B-885071D19A86" containerWithKeyObject="14FCA497-F754-A098-0393-E10B0A9ACA99" localFKIndex="A0064EC2-5A3D-01C3-AA7F-1ED0CC03A48B" name="FS_T_DOADOR_CLIENTE_FK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>713F6805-80C2-1286-8B9F-E90D60CD0DE7</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<referredTableLongName>FS_T_CLIENTE</referredTableLongName>
+<arc>0FFC96C0-DF3A-A1DC-9392-3B762BCEB48B</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F8E4C988-D795-EDA6-B3BA-AA44076EA5D2</referredTableID>
+<keyObject>7D9E3A1D-956E-0362-DBDF-2A345959479B</keyObject>
+<referredKeyID>7D9E3A1D-956E-0362-DBDF-2A345959479B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CLIENTE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>DOADOR</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

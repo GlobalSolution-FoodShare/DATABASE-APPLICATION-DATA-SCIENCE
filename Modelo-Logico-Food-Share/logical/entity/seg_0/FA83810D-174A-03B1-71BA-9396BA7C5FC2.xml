@@ -15,22 +15,11 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_DOADOR" id="D4FDF6EB-BDC7-A73E-4A3B-52B959BB475D">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 01:16:51 UTC</createdTime>
-<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="ID_CLIENTE" id="27D24F15-B09D-889A-6CB0-1F1235F47C1C">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 00:56:48 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <generatorID>713F6805-80C2-1286-8B9F-E90D60CD0DE7</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
@@ -43,44 +32,20 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="NR_CNPJ" id="05419EB7-776E-E9D0-701D-1311CFBB58D0">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 01:15:58 UTC</createdTime>
-<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>14</dataTypeSize>
-<ownDataTypeParameters>14,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="4114F0F5-0372-8A67-8CFE-A8FF999B11B2" name="FS_T_DOADOR PK">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 01:16:59 UTC</createdTime>
+<identifier id="3971E032-8F69-62F1-5943-CF0370B71165" name="FS_T_DOADOR PK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-05-31 23:38:11 UTC</createdTime>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D4FDF6EB-BDC7-A73E-4A3B-52B959BB475D</attributeRef>
-</usedAttributes>
-</identifier>
-<identifier id="CC85BF0F-0051-EC61-76A7-38BA42BBEE26" name="UK_DOADOR_CNPJ">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 01:17:21 UTC</createdTime>
-<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
-<newElementsIDs>05419EB7-776E-E9D0-701D-1311CFBB58D0</newElementsIDs>
-<usedAttributes>
-<attributeRef>05419EB7-776E-E9D0-701D-1311CFBB58D0</attributeRef>
+<attributeRef>27D24F15-B09D-889A-6CB0-1F1235F47C1C</attributeRef>
+<attributeRef>27D24F15-B09D-889A-6CB0-1F1235F47C1C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

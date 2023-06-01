@@ -18,6 +18,8 @@
 <Attribute name="ID_DOACAO" id="AFE89BED-9865-28D8-B0D5-1DB4319EC90D">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:20:27 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária da doação, gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária da doação, gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -28,24 +30,11 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_DOADOR" id="9CFC80AE-B93B-6DCC-C83B-499F28218883">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 01:17:04 UTC</createdTime>
-<generatorID>DE4FCE83-B411-6E44-5D1D-D70CE74C8D94</generatorID>
-<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
-<referedAttribute>D4FDF6EB-BDC7-A73E-4A3B-52B959BB475D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_CARRINHO" id="3D1711C8-DEB1-67A4-305A-AB02AF5D1E00">
+<Attribute name="ID_SOLICITACAO_PRODUTO" id="3D1711C8-DEB1-67A4-305A-AB02AF5D1E00">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:34:28 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária da solicitação do pedido , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária da solicitação do pedido , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <generatorID>22F35EA4-97AB-0F24-8DF5-E70A954CFAED</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
@@ -58,9 +47,27 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID_CLIENTE" id="22BCA4B5-0175-CAF3-EBE1-D8520C03E969">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-05-31 23:38:11 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>DE4FCE83-B411-6E44-5D1D-D70CE74C8D94</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<referedAttribute>27D24F15-B09D-889A-6CB0-1F1235F47C1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="DT_DOACAO" id="709C9E2E-65DF-1DE5-34CA-20CFFD34B8D4">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:20:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a data da doação, gerada automáticamente pelo sistema.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -73,6 +80,7 @@
 <Attribute name="DS_STATUS" id="6D261819-10F5-DFCA-A9DC-AAEE9A55ED77">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:20:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o status da doação.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>

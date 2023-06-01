@@ -18,6 +18,8 @@
 <Attribute name="ID_SOLICITACAO" id="146D0976-4029-B0A7-DCB1-81F206F41663">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:18:42 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária da solicitação , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária da solicitação , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -28,15 +30,17 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_RECEPTOR" id="1CDF235C-CF19-0DD2-5AD1-AC62A140B7B1">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 01:01:06 UTC</createdTime>
+<Attribute name="ID_CLIENTE" id="2FA55934-620F-FA63-6B72-CF27260631B2">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-05-31 23:37:57 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <generatorID>A8289C01-F74B-E0FA-A521-F1800626B689</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
 </engineerTo>
-<referedAttribute>8AA1B21A-F3C1-012D-AFAA-FD860461E9C7</referedAttribute>
+<referedAttribute>69392486-7B72-29CB-5A0B-4B28A4F9C914</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -46,6 +50,8 @@
 <Attribute name="DT_SOLICITACAO" id="525E4E63-9EA8-22D9-C5E6-27B4535F1EDF">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:18:56 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a data da solicitação, gerada automáticamente pelo sistema.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a data da solicitação, gerada automáticamente pelo sistema.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -58,6 +64,8 @@
 <Attribute name="DS_STATUS" id="73B8BDD0-AD9C-C4D3-C0A9-34ED74EB78C0">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:19:24 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o status da solicitação.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o status da solicitação.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>

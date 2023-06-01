@@ -1,219 +1,220 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="752C7F6B-00D5-2130-9867-F0AC23277E5F" name="FS_T_ENDERECO">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:19:32 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D658F7D-4633-9CA5-82D9-2490EE36B53F" name="FS_T_ENDERECO">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<generatorID>752C7F6B-00D5-2130-9867-F0AC23277E5F</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
-<adequatelyNormalized>NO</adequatelyNormalized>
-<expectedVolumes>0</expectedVolumes>
-<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
-<growthPercent>0</growthPercent>
-<growthType>Year</growthType>
-<maxVolumes>9999999</maxVolumes>
-<minVolumes>0</minVolumes>
-<normalForm>Third</normalForm>
-<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_ENDERECO" id="8F5A4015-1F82-4CDC-77F4-35C8EFA33535">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:57:01 UTC</createdTime>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ENDERECO" id="E2F5D405-A922-6E89-8506-2F7B056EF5B9">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber a chave primária do endereço do cliente, gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do endereço do cliente, gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>8F5A4015-1F82-4CDC-77F4-35C8EFA33535</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_CLIENTE" id="2E93CC8D-F503-3416-221D-258950BBB001">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:56:48 UTC</createdTime>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLIENTE" id="80FB6EB2-A484-5EFB-8E8F-CC35A255D957">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
-<generatorID>332776EB-C33A-636E-891D-13AC457DA39B</generatorID>
+<generatorID>2E93CC8D-F503-3416-221D-258950BBB001</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
-<referedAttribute>B3F1F601-649A-858B-BC94-F48C48C4BA80</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="NR_CEP" id="DF3329D9-07E7-A280-EEA2-798FC57D02BD">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:57:26 UTC</createdTime>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFC6B8D6-18A2-F289-EC45-2540371AAAA2" referredColumn="2168CBBF-5AB1-0402-1692-EF8B8E77D5CF"/>
+</associations>
+</Column>
+<Column name="NR_CEP" id="69BAFDEE-312E-71D8-CAF1-67A7444CE2A8">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber o CEP do endereço do cliente.Seu conteúdo é opcional.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber o CEP do endereço do cliente.Seu conteúdo é opcional.]]></commentInRDBMS>
+<generatorID>DF3329D9-07E7-A280-EEA2-798FC57D02BD</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>14</dataTypeSize>
 <ownDataTypeParameters>14,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="DS_BAIRRO" id="D2C9E7B0-8AE8-A47F-0F2A-522E4F087951">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:57:42 UTC</createdTime>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_BAIRRO" id="FCAA1DAA-49F7-9CF2-78E5-628692A772E9">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber o bairro do endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber o bairro do endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>D2C9E7B0-8AE8-A47F-0F2A-522E4F087951</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>60</dataTypeSize>
 <ownDataTypeParameters>60,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="DS_LOGRADOURO" id="6881E84A-A4AB-1524-8C38-9D4442D306D8">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:57:18 UTC</createdTime>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_LOGRADOURO" id="ECB393E8-EDA5-7204-3A89-968C8FDD12FA">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber o logradouro do endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber o logradouro do endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>6881E84A-A4AB-1524-8C38-9D4442D306D8</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>90</dataTypeSize>
 <ownDataTypeParameters>90,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="NR_LOGRADOURO" id="ECE1AF91-B918-61D9-FB94-27086A41F742">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LOGRADOURO" id="85440E29-E51C-F8DF-1DB7-4D22711D8F05">
 <createdBy>Daniele</createdBy>
-<createdTime>2023-06-01 02:32:30 UTC</createdTime>
-<comment><![CDATA[Esse atributo irá receber o número do logradouro do endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
-<commentInRDBMS><![CDATA[Esse atributo irá receber o número do logradouro do endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<createdTime>2023-06-01 02:31:20 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o número do logradourodo  endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o número do logradourodo  endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="DS_COMPLEMENTO" id="CB274875-0293-F346-0306-984E73F6F494">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_COMPLEMENTO" id="1125965E-555A-9977-56B6-93A924B8BA71">
 <createdBy>Daniele</createdBy>
-<createdTime>2023-06-01 02:33:24 UTC</createdTime>
+<createdTime>2023-06-01 02:35:05 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber o complemento  do endereço do cliente.Seu conteúdo é opcional.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber o complemento  do endereço do cliente.Seu conteúdo é opcional.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="NM_CIDADE" id="98B16D8F-B2C0-8B7C-1A4B-45420AA14D4C">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:58:48 UTC</createdTime>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CIDADE" id="8EB607E5-221F-1D7D-A0DC-506B4EEAF0BA">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber a cidade do endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber a cidade do endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>98B16D8F-B2C0-8B7C-1A4B-45420AA14D4C</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="DS_ESTADO" id="F81809A2-ECE2-033F-3F92-394BCB254ADC">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:59:20 UTC</createdTime>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ESTADO" id="A949BC6A-96AB-0FCD-994A-1A55A899E0A2">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber o estado do endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber o estado do endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>F81809A2-ECE2-033F-3F92-394BCB254ADC</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>60</dataTypeSize>
 <ownDataTypeParameters>60,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="SG_ESTADO" id="E5457A55-5FA5-0E5D-7E2B-3CA2BCFE179B">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:59:39 UTC</createdTime>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_ESTADO" id="C9545221-2A6B-E151-91E7-3400C1CC87A4">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber a sigla do estado do endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber a sigla do estado do endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>E5457A55-5FA5-0E5D-7E2B-3CA2BCFE179B</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
 <ownDataTypeParameters>2,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="NR_LATITUDE" id="964659A8-890E-A792-A901-86CB39827B6F">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LATITUDE" id="6D24CCB7-9592-8A18-9622-30D85F0F543D">
 <createdBy>Daniele</createdBy>
-<createdTime>2023-06-01 01:09:59 UTC</createdTime>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber o número da latitude  do endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber o número da latitude  do endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>964659A8-890E-A792-A901-86CB39827B6F</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="NR_LONGITUDE" id="113D3409-E6EB-4A90-9EEB-727302DCBCC1">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LONGITUDE" id="39585E9D-1FE9-5880-7011-E5BA99D6D22D">
 <createdBy>Daniele</createdBy>
-<createdTime>2023-06-01 01:11:51 UTC</createdTime>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber o número da longitute do endereço do cliente.Seu conteúdo é obrigatório.]]></comment>
 <commentInRDBMS><![CDATA[Esse atributo irá receber o número da longitute do endereço do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>113D3409-E6EB-4A90-9EEB-727302DCBCC1</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8D5CC8C3-4F5D-A7B2-D7CC-9688910D17D3" name="FS_T_ENDERECO_PK">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 00:57:09 UTC</createdTime>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="52C71248-B3F6-9228-C990-6CB84CB2448D" name="FS_T_ENDERECO_PK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<generatorID>8D5CC8C3-4F5D-A7B2-D7CC-9688910D17D3</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="false"/>
-</engineerTo>
 <pk>true</pk>
-<newElementsIDs>8F5A4015-1F82-4CDC-77F4-35C8EFA33535</newElementsIDs>
-<usedAttributes>
-<attributeRef>8F5A4015-1F82-4CDC-77F4-35C8EFA33535</attributeRef>
-</usedAttributes>
-</identifier>
-</identifiers>
-</Entity>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2F5D405-A922-6E89-8506-2F7B056EF5B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1F87AF4-9130-07AA-D045-01E6C118B398" name="FS_T_ENDERECO__IDX">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>332776EB-C33A-636E-891D-13AC457DA39B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="80FB6EB2-A484-5EFB-8E8F-CC35A255D957"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BEC890D-8BBF-2FBE-8DDA-CF398AD0E88D" name="FS_T_ENDERECO_CLIENTE_FK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>332776EB-C33A-636E-891D-13AC457DA39B</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80FB6EB2-A484-5EFB-8E8F-CC35A255D957"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

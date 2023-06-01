@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FDD274A9-6FD8-886F-758F-6521704200D1" name="FS_T_CARRINHO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FDD274A9-6FD8-886F-758F-6521704200D1" name="FS_T_SOLICITACAO_PRODUTO">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 00:27:54 UTC</createdTime>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
@@ -15,9 +15,11 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_CARRINHO" id="04AFCC87-46A4-62F6-0353-3737207761CA">
+<Attribute name="ID_SOLICITACAO_PRODUTO" id="04AFCC87-46A4-62F6-0353-3737207761CA">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:19:34 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária da solicitação do pedido , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária da solicitação do pedido , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -31,6 +33,8 @@
 <Attribute name="ID_SOLICITACAO" id="1BC08C53-2C6A-9B39-76CA-8FE595758DA4">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:19:27 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária da solicitação , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária da solicitação , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <generatorID>F4C772EE-4137-88D9-D045-3126B24EB889</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
@@ -46,6 +50,8 @@
 <Attribute name="ID_PRODUTO" id="1DA5DD19-0BE1-D5E3-8DCD-62AC917E79BE">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:23:13 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do produto , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do produto , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <generatorID>E40F50A2-97A1-3F4A-5425-B8FF461EC964</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
@@ -61,6 +67,8 @@
 <Attribute name="QTD_PRODUTO" id="5E0BD093-8C33-2B58-6340-8917BBA3C481">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:32:41 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a quantidade  de produtos.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a quantidade  de produtos.Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
@@ -73,7 +81,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="1F3F6D52-6C4A-4C8A-0682-A7104C89EE1A" name="produto solicitacao PK">
+<identifier id="1F3F6D52-6C4A-4C8A-0682-A7104C89EE1A" name="FS_T_SOLICITACAO_PRODUTO_PK">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:20:02 UTC</createdTime>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
@@ -81,6 +89,7 @@
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>04AFCC87-46A4-62F6-0353-3737207761CA</newElementsIDs>
 <usedAttributes>
 <attributeRef>04AFCC87-46A4-62F6-0353-3737207761CA</attributeRef>
 </usedAttributes>

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9316D478-A2D6-9E55-D5CA-0AFBE3BD3F36" name="FS_T_RECEPTOR">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<generatorID>6F32F3C1-22AF-4DA9-5BB8-5BA87A9AFFE7</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CLIENTE" id="E3D904DC-FFF9-AF16-3E23-CE6D15C92003">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>69392486-7B72-29CB-5A0B-4B28A4F9C914</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B8634B7-5527-B7A8-5CA1-43AD3E7EFEDA" referredColumn="2168CBBF-5AB1-0402-1692-EF8B8E77D5CF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC375824-7763-6FD0-D256-FBDAFB6B1A88" name="FS_T_RECEPTOR_PK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:57 UTC</createdTime>
+<generatorID>D9892255-D553-B79F-540B-E303AF078160</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3D904DC-FFF9-AF16-3E23-CE6D15C92003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FD76FE2-78B1-0F94-2202-4D7588B14E52" name="FS_T_RECEPTOR__IDX">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 02:26:06 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3D904DC-FFF9-AF16-3E23-CE6D15C92003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00BA9B13-5D78-EE34-E099-E6AD325A5102" name="FS_T_RECEPTOR_CLIENTE_FK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>4C4B7B9C-24C0-0F94-4B40-1BA026350496</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3D904DC-FFF9-AF16-3E23-CE6D15C92003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

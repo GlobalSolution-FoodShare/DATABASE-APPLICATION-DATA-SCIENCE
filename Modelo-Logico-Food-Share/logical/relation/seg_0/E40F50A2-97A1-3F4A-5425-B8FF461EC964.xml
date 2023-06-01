@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_18" directorySegmentName="seg_0" id="E40F50A2-97A1-3F4A-5425-B8FF461EC964">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PRODUTO_SOLICITACAO_PRODUTO" directorySegmentName="seg_0" id="E40F50A2-97A1-3F4A-5425-B8FF461EC964">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 00:28:48 UTC</createdTime>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>

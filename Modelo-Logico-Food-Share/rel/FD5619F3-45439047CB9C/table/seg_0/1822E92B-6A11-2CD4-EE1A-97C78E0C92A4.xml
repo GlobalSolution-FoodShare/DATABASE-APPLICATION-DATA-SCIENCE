@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1822E92B-6A11-2CD4-EE1A-97C78E0C92A4" name="FS_T_USUARIO">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>6BAEC551-2E35-C8E8-58A5-9CD185013C24</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="28172A08-82E0-ECE3-9E9E-90180CDE68CB">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do usuario , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do usuario , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>87896696-322C-C9E0-7844-94383039740C</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLIENTE" id="81B68E4D-B772-17FA-AD09-E0DEB8555AF7">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>070ADCD0-D3C2-BE47-376D-B2A0C128F3B2</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D37C2C8A-9708-DDCB-55EA-E5B8150ED333" referredColumn="2168CBBF-5AB1-0402-1692-EF8B8E77D5CF"/>
+</associations>
+</Column>
+<Column name="DS_EMAIL" id="C82E660C-C7D3-CC5F-F320-61C721C3CB1E">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o e-mail do usuário.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o e-mail do usuário.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>ECB58E3D-D320-FE22-4C44-E3DCD2848F76</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_SENHA" id="E09ED532-5CCA-988B-D1DE-20A664D5425D">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a senha do usuário.Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a senha do usuário.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>6DE22AF1-ADEB-F0F8-E554-0C5F626B67C7</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ACESSO" id="1692781C-3115-515C-E258-58E5E712F8D0">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a data de acesso so usuário, gerada automáticamente pelo sistema.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a data de acesso so usuário, gerada automáticamente pelo sistema.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>302B7F30-A808-9BEB-3818-4F31F790BE6A</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E3CAC0BE-DC1B-73F2-37B3-5AC1B4479586" name="FS_T_USUARIO_PK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>C7EA3EF7-22EA-35B0-A9B7-B2768817A4FC</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28172A08-82E0-ECE3-9E9E-90180CDE68CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22626823-F31F-3883-4D17-CE00AFC81DE4" name="FS_T_USUARIO_DS_EMAIL_UN">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>06AC4F62-886D-7CCD-206B-57EF91AF67FF</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C82E660C-C7D3-CC5F-F320-61C721C3CB1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29EF356E-5399-7BBF-C812-B72DBAA12781" name="FS_T_USUARIO__IDX">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E66437F2-B677-18D7-C771-D6337FF80CF8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="81B68E4D-B772-17FA-AD09-E0DEB8555AF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBB49159-5A47-E94E-299C-9E00D7A47A53" name="FS_T_USUARIO_CLIENTE_FK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>E66437F2-B677-18D7-C771-D6337FF80CF8</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81B68E4D-B772-17FA-AD09-E0DEB8555AF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

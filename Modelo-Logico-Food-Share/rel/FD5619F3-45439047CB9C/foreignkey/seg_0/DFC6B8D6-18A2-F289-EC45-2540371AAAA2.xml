@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DFC6B8D6-18A2-F289-EC45-2540371AAAA2" containerWithKeyObject="0D658F7D-4633-9CA5-82D9-2490EE36B53F" localFKIndex="7BEC890D-8BBF-2FBE-8DDA-CF398AD0E88D" name="FS_T_ENDERECO_CLIENTE_FK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>332776EB-C33A-636E-891D-13AC457DA39B</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<referredTableLongName>FS_T_CLIENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F8E4C988-D795-EDA6-B3BA-AA44076EA5D2</referredTableID>
+<keyObject>7D9E3A1D-956E-0362-DBDF-2A345959479B</keyObject>
+<referredKeyID>7D9E3A1D-956E-0362-DBDF-2A345959479B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CLIENTE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

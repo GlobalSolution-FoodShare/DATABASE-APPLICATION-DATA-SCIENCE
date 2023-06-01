@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="43D2EB35-5970-0BFF-96B4-523D182D976F" containerWithKeyObject="56C8C007-E900-215B-C125-56196F394156" localFKIndex="FED464EC-C421-ECA1-AE56-C992A80FFFC4" name="FS_T_SOL_PROD_SOLICITACAO_FK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>F4C772EE-4137-88D9-D045-3126B24EB889</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<referredTableLongName>FS_T_SOLICITACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BF5B489C-99A7-E332-5E3E-5EF64209E012</referredTableID>
+<keyObject>9C8A3BFE-3384-2B35-5ED8-10C936F0429B</keyObject>
+<referredKeyID>9C8A3BFE-3384-2B35-5ED8-10C936F0429B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SOLICITACAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5B8634B7-5527-B7A8-5CA1-43AD3E7EFEDA" containerWithKeyObject="9316D478-A2D6-9E55-D5CA-0AFBE3BD3F36" localFKIndex="00BA9B13-5D78-EE34-E099-E6AD325A5102" name="FS_T_RECEPTOR_CLIENTE_FK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-01 01:22:58 UTC</createdTime>
+<generatorID>4C4B7B9C-24C0-0F94-4B40-1BA026350496</generatorID>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<referredTableLongName>FS_T_CLIENTE</referredTableLongName>
+<arc>0FFC96C0-DF3A-A1DC-9392-3B762BCEB48B</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F8E4C988-D795-EDA6-B3BA-AA44076EA5D2</referredTableID>
+<keyObject>7D9E3A1D-956E-0362-DBDF-2A345959479B</keyObject>
+<referredKeyID>7D9E3A1D-956E-0362-DBDF-2A345959479B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CLIENTE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>RECEPTOR</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

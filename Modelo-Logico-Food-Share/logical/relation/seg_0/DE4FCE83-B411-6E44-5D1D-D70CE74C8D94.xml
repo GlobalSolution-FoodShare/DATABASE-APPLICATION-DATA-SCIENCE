@@ -1,12 +1,12 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_28" directorySegmentName="seg_0" id="DE4FCE83-B411-6E44-5D1D-D70CE74C8D94">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_DOADOR_DOACAO" directorySegmentName="seg_0" id="DE4FCE83-B411-6E44-5D1D-D70CE74C8D94">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 01:07:02 UTC</createdTime>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
 </engineerTo>
-<sourcePk>4114F0F5-0372-8A67-8CFE-A8FF999B11B2</sourcePk>
+<sourcePk>3971E032-8F69-62F1-5943-CF0370B71165</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>

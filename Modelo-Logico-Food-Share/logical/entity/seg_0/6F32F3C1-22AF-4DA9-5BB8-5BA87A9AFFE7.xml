@@ -15,22 +15,11 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID_RECEPTOR" id="8AA1B21A-F3C1-012D-AFAA-FD860461E9C7">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 01:00:33 UTC</createdTime>
-<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
-<engineerTo>
-<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="ID_CLIENTE" id="69392486-7B72-29CB-5A0B-4B28A4F9C914">
 <createdBy>Fonse</createdBy>
 <createdTime>2023-05-31 00:56:48 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do cliente , gerada automáticamente. Seu conteúdo é obrigatório.]]></commentInRDBMS>
 <generatorID>4C4B7B9C-24C0-0F94-4B40-1BA026350496</generatorID>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
@@ -45,16 +34,17 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="E663B9FE-BE0B-A419-DB5A-2CAF9217F442" name="FS_T_RECEPTOR PK">
-<createdBy>Fonse</createdBy>
-<createdTime>2023-05-31 01:00:44 UTC</createdTime>
+<identifier id="D9892255-D553-B79F-540B-E303AF078160" name="FS_T_RECEPTOR PK">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-05-31 23:37:57 UTC</createdTime>
 <ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
 <engineerTo>
 <item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>8AA1B21A-F3C1-012D-AFAA-FD860461E9C7</attributeRef>
+<attributeRef>69392486-7B72-29CB-5A0B-4B28A4F9C914</attributeRef>
+<attributeRef>69392486-7B72-29CB-5A0B-4B28A4F9C914</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
