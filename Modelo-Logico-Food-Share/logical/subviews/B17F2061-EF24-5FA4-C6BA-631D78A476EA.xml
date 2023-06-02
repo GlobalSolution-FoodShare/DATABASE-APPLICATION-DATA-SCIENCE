@@ -12,11 +12,11 @@
 <showGrid>false</showGrid>
 <diagramColor>-1</diagramColor>
 <display>false</display>
-<notation>1</notation>
+<notation>2</notation>
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2E29B857-4B0D-ED5E-1F3B-A9C1661D0A36" otype="Entity" vid="9E8B2E6B-1819-9573-A991-8CE454E46B66">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="947" y="890" width="231" height="122"/>
+<bounds x="947" y="890" width="280" height="122"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="6BAEC551-2E35-C8E8-58A5-9CD185013C24" otype="Entity" vid="A4A30A94-A49E-C8D9-274B-3FA387CE5BBB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -32,7 +32,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="752C7F6B-00D5-2130-9867-F0AC23277E5F" otype="Entity" vid="83465E46-EBC7-B0FE-68F4-04C892994EF0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="800" y="462" width="241" height="194"/>
+<bounds x="800" y="462" width="280" height="214"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="81212466-8006-A51F-7B8E-F3FB8D67D0D5" otype="Entity" vid="731AA830-7536-DAD8-25B4-868B330556BC">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

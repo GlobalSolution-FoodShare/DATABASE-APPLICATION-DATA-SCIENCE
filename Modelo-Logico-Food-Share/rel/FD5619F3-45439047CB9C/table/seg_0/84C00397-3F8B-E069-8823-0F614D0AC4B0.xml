@@ -70,7 +70,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DS_STATUS" id="BD27C31F-0EC1-062A-52D6-210E6A64C53C">
+<Column name="ST_DOACAO" id="BD27C31F-0EC1-062A-52D6-210E6A64C53C">
 <createdBy>Daniele</createdBy>
 <createdTime>2023-06-01 01:22:57 UTC</createdTime>
 <commentInRDBMS><![CDATA[Esse atributo irá receber o status da doação.Seu conteúdo é obrigatório.]]></commentInRDBMS>
@@ -80,6 +80,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="AGUARDANDO" description="Caso o status esteja em aguardo."/>
+<valueDef value="CANCELADO" description="Caso o status esteja cancelado."/>
+<valueDef value="CONCLUIDO" description="Caso o status esteja concluído."/>
+</listOfValues>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

@@ -53,7 +53,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DS_STATUS" id="2B19B4D5-0865-F92A-28EB-80F0FBEB53F7">
+<Column name="ST_SOLICITACAO" id="2B19B4D5-0865-F92A-28EB-80F0FBEB53F7">
 <createdBy>Daniele</createdBy>
 <createdTime>2023-06-01 01:22:58 UTC</createdTime>
 <comment><![CDATA[Esse atributo irá receber o status da solicitação.Seu conteúdo é obrigatório.]]></comment>

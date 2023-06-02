@@ -60,6 +60,21 @@
 <dataTypeSize>90</dataTypeSize>
 <ownDataTypeParameters>90,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="TP_CLIENTE" id="9282D013-7E7F-1385-E6C9-9B468D84EA12">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-02 01:29:23 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o nome tipo  do cliente.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o nome tipo  do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<engineerTo>
+<item key="FD5619F3-A476-4AAE-BBCE-45439047CB9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A75A1417-6930-FFEF-C792-0F6F2061377F" name="FS_T_CLIENTE_PK">

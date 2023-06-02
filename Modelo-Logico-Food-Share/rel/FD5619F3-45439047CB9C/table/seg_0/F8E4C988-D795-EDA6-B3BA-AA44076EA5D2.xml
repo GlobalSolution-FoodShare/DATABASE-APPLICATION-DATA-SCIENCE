@@ -50,6 +50,19 @@
 <ownDataTypeParameters>90,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TP_CLIENTE" id="D7E2E534-829B-9158-80D7-3E4E90D49BC9">
+<createdBy>Daniele</createdBy>
+<createdTime>2023-06-02 01:20:18 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o tipo do cliente.Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o tipo do cliente.Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Modelo-Logico-Food-Share</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="7D9E3A1D-956E-0362-DBDF-2A345959479B" name="FS_T_CLIENTE_PK">
