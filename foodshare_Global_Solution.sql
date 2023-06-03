@@ -20,10 +20,10 @@ DROP TABLE fs_t_solicitacao_produto CASCADE CONSTRAINTS;
 
 DROP TABLE fs_t_usuario CASCADE CONSTRAINTS;
 
---------CRIA REGISTRO DE LOGS--------
-
 DROP TABLE t_registros_logs CASCADE CONSTRAINTS;
 
+
+--------CRIA REGISTRO DE LOGS--------
 
 CREATE TABLE t_registros_logs (
     id_log_erro  NUMBER(9) NOT NULL,
