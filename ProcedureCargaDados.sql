@@ -23,7 +23,6 @@ DROP SEQUENCE sq_fs_t_solicitacao_produto;
 DROP SEQUENCE sq_fs_t_feedback;
 
 
-
 --CRIANDO SEQUENCES--
 CREATE SEQUENCE sq_registros_logs
 START WITH 1
@@ -148,10 +147,27 @@ BEGIN
     INSERT INTO fs_t_endereco (id_endereco, id_cliente, nr_cep, ds_bairro, ds_logradouro, nr_logradouro, ds_complemento, nm_cidade, ds_estado, sg_estado, nr_latitude, nr_longitude)
     VALUES (sq_fs_t_endereco.NEXTVAL, 10, '09780-300', 'Centro', 'Avenida Getúlio Vargas', '789', null, 'São Bernardo do Campo', 'São Paulo', 'SP', '-23.709876', '-46.547654');
     
+    COMMIT;
     EXCEPTION
-        WHEN OTHERS THEN 
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
             v_cd_erro := SQLCODE;
             v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            IF SQLCODE = -12899 THEN
+                v_ds_mensagem := 'Valor muito grande para a coluna';
+            END IF;
             INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
             VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
   END;
@@ -174,6 +190,26 @@ BEGIN
     INSERT INTO fs_t_doador (id_cliente)
     VALUES (10);
     
+    COMMIT;
+    EXCEPTION
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
   END;
   
   -- Tabela fs_t_receptor
@@ -194,25 +230,65 @@ BEGIN
     INSERT INTO fs_t_receptor (id_cliente)
     VALUES (9);
     
+    COMMIT;
+    EXCEPTION
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
   END;
   
   BEGIN
     
     INSERT INTO fs_t_solicitacao (id_solicitacao, id_cliente, dt_solicitacao, st_solicitacao)
-    VALUES (sq_fs_t_solicitacao.NEXTVAL, 2, SYSDATE, 'AGUARDANDO');
+    VALUES (sq_fs_t_solicitacao.NEXTVAL, 2, SYSDATE, 'CONCLUIDO');
 
     INSERT INTO fs_t_solicitacao (id_solicitacao, id_cliente, dt_solicitacao, st_solicitacao)
     VALUES (sq_fs_t_solicitacao.NEXTVAL, 3, SYSDATE, 'CONCLUIDO');
 
     INSERT INTO fs_t_solicitacao (id_solicitacao, id_cliente, dt_solicitacao, st_solicitacao)
-    VALUES (sq_fs_t_solicitacao.NEXTVAL, 6, SYSDATE, 'CANCELADO');
+    VALUES (sq_fs_t_solicitacao.NEXTVAL, 6, SYSDATE, 'CONCLUIDO');
 
     INSERT INTO fs_t_solicitacao (id_solicitacao, id_cliente, dt_solicitacao, st_solicitacao)
-    VALUES (sq_fs_t_solicitacao.NEXTVAL, 8, SYSDATE, 'AGUARDANDO');
+    VALUES (sq_fs_t_solicitacao.NEXTVAL, 8, SYSDATE, 'CONCLUIDO');
 
     INSERT INTO fs_t_solicitacao (id_solicitacao, id_cliente, dt_solicitacao, st_solicitacao)
     VALUES (sq_fs_t_solicitacao.NEXTVAL, 9, SYSDATE, 'CONCLUIDO');
     
+    COMMIT;
+    EXCEPTION
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
   END;
   BEGIN
     
@@ -231,6 +307,29 @@ BEGIN
     INSERT INTO fs_t_produto (id_produto, nm_produto, nr_peso, ds_produto)
     VALUES (sq_fs_t_produto.NEXTVAL, 'Óleo de Soja', 900, 'Óleo de soja, garrafa de 900ml');
     
+    COMMIT;
+     EXCEPTION
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            IF SQLCODE = -12899 THEN
+                v_ds_mensagem := 'Valor muito grande para a coluna';
+            END IF;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
   END;
   
   BEGIN
@@ -250,37 +349,129 @@ BEGIN
     INSERT INTO fs_t_solicitacao_produto (id_solicitacao_produto, id_solicitacao, id_produto, qtd_produto)
     VALUES (sq_fs_t_solicitacao_produto.NEXTVAL, 5, 2, 12);
     
+    COMMIT;
+    EXCEPTION
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
   END;
   
   BEGIN
     INSERT INTO fs_t_doacao (id_doacao, id_solicitacao_produto, id_cliente, dt_doacao, st_doacao)
-    VALUES (sq_fs_t_doacao.NEXTVAL, 1, 1, SYSDATE, 'Em andamento');
+    VALUES (sq_fs_t_doacao.NEXTVAL, 1, 1, SYSDATE, 'CONCLUIDO');
 
     INSERT INTO fs_t_doacao (id_doacao, id_solicitacao_produto, id_cliente, dt_doacao, st_doacao)
-    VALUES (sq_fs_t_doacao.NEXTVAL, 2, 4, SYSDATE, 'Concluída');
+    VALUES (sq_fs_t_doacao.NEXTVAL, 2, 4, SYSDATE, 'CONCLUIDO');
 
     INSERT INTO fs_t_doacao (id_doacao, id_solicitacao_produto, id_cliente, dt_doacao, st_doacao)
-    VALUES (sq_fs_t_doacao.NEXTVAL, 3, 5, SYSDATE, 'Em andamento');
+    VALUES (sq_fs_t_doacao.NEXTVAL, 3, 5, SYSDATE, 'CONCLUIDO');
 
     INSERT INTO fs_t_doacao (id_doacao, id_solicitacao_produto, id_cliente, dt_doacao, st_doacao)
-    VALUES (sq_fs_t_doacao.NEXTVAL, 4, 7, SYSDATE, 'Concluída');
+    VALUES (sq_fs_t_doacao.NEXTVAL, 4, 7, SYSDATE, 'CONCLUIDO');
 
     INSERT INTO fs_t_doacao (id_doacao, id_solicitacao_produto, id_cliente, dt_doacao, st_doacao)
-    VALUES (sq_fs_t_doacao.NEXTVAL, 5, 10, SYSDATE, 'Em andamento');
+    VALUES (sq_fs_t_doacao.NEXTVAL, 5, 10, SYSDATE, 'CONCLUIDO');
 
+    COMMIT;
+     EXCEPTION
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
   END;
   
-  EXCEPTION    
-    WHEN OTHERS THEN
-       v_cd_erro := SQLCODE;
-       v_ds_mensagem := SQLERRM;
+  BEGIN
+    INSERT INTO fs_t_feedback (id_feedback, id_doacao, id_solicitacao, nr_nota, ds_feedback)
+    VALUES (sq_fs_t_feedback.NEXTVAL, 1, 1, 5, 'Ótima experiência de doação.');
 
-        IF SQLCODE = -12899 THEN
-           v_ds_mensagem := 'Valor muito grande para a coluna NR_CPF';
-        END IF;
+    INSERT INTO fs_t_feedback (id_feedback, id_doacao, id_solicitacao, nr_nota, ds_feedback)
+    VALUES (sq_fs_t_feedback.NEXTVAL, 2, 2, 5, 'Doação bem-sucedida!');
 
-        INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
-        VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
+    INSERT INTO fs_t_feedback (id_feedback, id_doacao, id_solicitacao, nr_nota, ds_feedback)
+    VALUES (sq_fs_t_feedback.NEXTVAL, 3, 3, 4, 'Atraso na entrega dos produtos.');
+
+    INSERT INTO fs_t_feedback (id_feedback, id_doacao, id_solicitacao, nr_nota, ds_feedback)
+    VALUES (sq_fs_t_feedback.NEXTVAL, 4, 4, 5, 'Excelente atendimento e doação.');
+
+    INSERT INTO fs_t_feedback (id_feedback, id_doacao, id_solicitacao, nr_nota, ds_feedback)
+    VALUES (sq_fs_t_feedback.NEXTVAL, 5, 5, 3, 'Problemas na embalagem dos produtos.');
+    
+    COMMIT;
+     EXCEPTION
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            IF SQLCODE = -12899 THEN
+                v_ds_mensagem := 'Valor muito grande para a coluna';
+            END IF;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
+  END;
+  
+  EXCEPTION
+       WHEN DUP_VAL_ON_INDEX THEN
+       ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN VALUE_ERROR THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+        WHEN OTHERS THEN
+        ROLLBACK;
+            v_cd_erro := SQLCODE;
+            v_ds_mensagem := SQLERRM;
+            IF SQLCODE = -12899 THEN
+                v_ds_mensagem := 'Valor muito grande para a coluna';
+            END IF;
+            INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+            VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE , v_cd_erro, v_ds_mensagem);
 END;
 /
 
@@ -310,12 +501,16 @@ TRUNCATE TABLE t_registros_logs;
 --PROCEDURES DE IMPLMENTAÇÃO--
 CREATE OR REPLACE PROCEDURE pr_insere_cliente_doador_receptor(pr_id_cliente in fs_t_cliente.id_cliente%type) AS
 begin
-    declare 
+    declare  
+        cursor c_cliente_encontrado is
+        select id_cliente, tp_cliente into v_id_cliente,v_id_tp_cliente 
+        from fs_t_cliente where id_cliente = pr_id_cliente;
         v_id_cliente fs_t_cliente.id_cliente%TYPE;
         v_id_tp_cliente fs_t_cliente.tp_cliente%TYPE;
     begin
-        select id_cliente, tp_cliente into v_id_cliente,v_id_tp_cliente from fs_t_cliente where id_cliente = pr_id_cliente;
+        open c_cliente_encontrado;
         
+        fetch c_cliente_encontrado into v_id_cliente, v_id_tp_cliente;
         if v_id_tp_cliente = 'RECEPTOR' and v_id_cliente is not null then
             update fs_t_receptor set id_cliente = v_id_cliente;
         elsif v_id_tp_cliente = 'DOADOR' and v_id_cliente is not null then
@@ -329,6 +524,8 @@ begin
         else
            DBMS_OUTPUT.PUT_LINE('Nenhuma alteração realizada'); 
         end if;
+        
+        close c_cliente_encontrado;
     end;
     exception 
         when NO_DATA_FOUND then 
@@ -338,4 +535,36 @@ begin
 end;
 /
 
+CREATE OR REPLACE PROCEDURE pr_buscar_clientes_proximos(
+    pr_latitude IN FS_T_ENDERECO.NR_LATITUDE%TYPE,
+    pr_longitude IN FS_T_ENDERECO.NR_LONGITUDE%TYPE,
+    pr_raio IN NUMBER
+)
+IS
+    v_cd_erro NUMBER;
+    v_ds_mensagem VARCHAR2(200);
+    BEGIN
+    
+    SELECT c.*
+    FROM fs_t_cliente c
+    INNER JOIN fs_t_endereco e ON c.id_cliente = e.id_cliente
+    WHERE 6371 * 2 * ACOS(
+        SIN((TO_NUMBER(pr_latitude) * 3.141592653589793) / 180) * SIN((TO_NUMBER(e.nr_latitude) * 3.141592653589793) / 180) +
+        COS((TO_NUMBER(pr_latitude) * 3.141592653589793) / 180) * COS((TO_NUMBER(e.nr_latitude) * 3.141592653589793) / 180) *
+        COS(((TO_NUMBER(pr_longitude) - TO_NUMBER(e.nr_longitude)) * 3.141592653589793) / 180)
+    ) <= pr_raio;
+    
+    EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        v_cd_erro := SQLCODE;
+        v_ds_mensagem := SQLERRM;
+        INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+        VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+    WHEN OTHERS THEN
+        v_cd_erro := SQLCODE;
+        v_ds_mensagem := SQLERRM;
+        INSERT INTO t_registros_logs (id_log_erro, nm_usuario, dt_ocorrencia, cd_erro, ds_mensagem)
+        VALUES (sq_registros_logs.NEXTVAL, USER, SYSDATE, v_cd_erro, v_ds_mensagem);
+END;
+/
 
