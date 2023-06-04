@@ -1,5 +1,5 @@
 -- Gerado por Oracle SQL Developer Data Modeler 19.4.0.350.1424
---   em:        2023-06-01 22:21:34 BRT
+--   em:        2023-06-04 12:05:53 BRT
 --   site:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -20,6 +20,9 @@ COMMENT ON COLUMN fs_t_cliente.nr_cpf IS
 
 COMMENT ON COLUMN fs_t_cliente.nm_completo IS
     'Esse atributo irá receber o nome completo  do cliente.Seu conteúdo é obrigatório.';
+
+COMMENT ON COLUMN fs_t_cliente.tp_cliente IS
+    'Esse atributo irá receber o tipo do cliente.Seu conteúdo é obrigatório.';
 
 ALTER TABLE fs_t_cliente ADD CONSTRAINT fs_t_cliente_pk PRIMARY KEY ( id_cliente );
 
@@ -92,8 +95,8 @@ CREATE TABLE fs_t_endereco (
     nm_cidade       VARCHAR2(30) NOT NULL,
     ds_estado       VARCHAR2(60) NOT NULL,
     sg_estado       CHAR(2) NOT NULL,
-    nr_latitude     VARCHAR2(50) NOT NULL,
-    nr_longitude    VARCHAR2(50) NOT NULL
+    nr_latitude     NUMBER NOT NULL,
+    nr_longitude    NUMBER NOT NULL
 );
 
 COMMENT ON COLUMN fs_t_endereco.id_endereco IS
